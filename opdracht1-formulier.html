@@ -14,107 +14,58 @@
 		<p><i>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</i></p>
 		<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. Voor vragen of opmerkingen kunt u <a href="https://moodle.cmd.hva.nl/my/">contact </a>met ons opnemen. </p>
 	</section>
-		<form>	
-			<p>Uitstroomberoepen:</p>
+		<form>
 			<fieldset>
-                Naam:<br>
-			    <input type='text'>
-			    <br>
-			    Bedrijf:<br>
-			    <input type='text'>
-			    <br>
-			    Adres:<br>
-			    <input type='text'>
-			    <br>
-			    Postcode:<br>
-			    <input type='text' pattern='[1-9][0-9]{3}\s?[a-zA-Z]{2}'>
-			    <br>
-			    Plaats:<br>
-			    <input type='text'>
-			    <br>
-			    Telefoon:<br>
-			    <input type='tel'>
-			    <br>
-			    Email:<br>
-			    <input type='email'>
-			    <br>
+                <legend>Uitstroomberoepen</legend>
+                <label>Naam:<input type='text' name='naam'/></label>
+                <label>Bedrijf:<input type='text' name='bedrijfsnaam'></label>
+                <label>Adres:<input type='text' name='bedrijfsnaam'></label>
+                <label>Postcode:<input type='text' name='postcode' pattern='[1-9][0-9]{3}\s?[a-zA-Z]{2}'></label>
+                <label>Plaats:<input type='text' name='plaats'></label>
+                <label>Telefoon:<input type='tel' name='telefoonnummer'></label>
+                <label>Email:<input type='email' name='email'></label>                              
 			</fieldset>
-			<p>Ik wil mijn aanmelden</p>
 			<fieldset>
-				Voor een project<input type='radio'>
-				Als stagebedrijf<input type='radio'>
+				<legend>Ik wil mijn aanmelden</legend>
+				<label>Voor een projecet:<input type='radio' name='project'></label>
+				<label>Als stagebedrijf:<input type='radio' name='stagebedrijf'></label>   
 			</fieldset>
-			<p>Project</p>
 			<fieldset>
-				Titel:<br>
-				<input type='text'>
-				<br>
-				Opdrachtomschrijving:<br>
-				<input type='text'>
-				<br>
-				Doelgroepomschrijving:<br>
-				<input type='text'>
-				<br>
-				Doelstelling/intentie van het projec:<br>
-				<input type='text'>
-				<br>
-				Looptijd:<br>
-				<input type='month'>
-				<br>
-				Deadline:<br>
-				<input type='text'>
-				<br>
-				<p>Geschikt voor</p>
-				Eerstejaarsstudenten
-				<input type='checkbox'><br>
-				Tweedejaarsstudenten
-				<input type='checkbox'><br>
-				Derdejaarsstudenten
-				<input type='checkbox'><br>
-				Afstudeerstudenten
-				<input type='checkbox'><br>
-				Onbekend
-				<input type='checkbox'><br>
-				<br>Opmerking:<br><textarea></textarea>
+				<legend>Project</legend>
+				<label>Titel<input type='text' name='titel'></label></p>
+				<label>Opdrachtomschrijving:<input type='text' name='Opdrachtomschrijving'></label>
+                <label>Doelgroepomschrijving:<input type='text' name='doelgroepomschrijving'></label>
+                <label>Doelstelling/intentie van het project:<input type='text' name='doelstelling'></label>
+                <label>Looptijd:<input type='text' name='looptijd'></label>
+                <label>Deadline:<input type='date' name='deadline'></label>
+                <p>Geschikt voor</p>
+                <label>Eerstejaar studenten:<input type='checkbox' name='eerstejaars'></label>
+                <label>Tweedjaars studenten:<input type='checkbox' name='tweedejaars'></label>
+                <label>Derdejaars studenten:<input type='checkbox' name='derdejaars'></label>
+                <label>Afstudeer studenten:<input type='checkbox' name='afstudeer'></label>
+                <label>Onbekend:<input type='checkbox' name='onbekend'></label>
+                <label>Opmerking:<textarea name='opmerking'></textarea></label>
 			</fieldset>
-			<p>Stage</p>
 			<fieldset>
-				<p>Geschikt voor</p>
-				Tweedejaarsstudenten
-				<input type='checkbox'><br>
-				Afstudeerstudenten
-				<input type='checkbox'><br>
-				Onbekend
-				<input type='checkbox'><br>
-				<p>Hoelang is de stage?</p>
-				10 weken 
-				<input type='radio'>
-				20 weken
-				<input type='radio'>
-				<p>Beschrijving werkzaamheden:</p>
-				<textarea>Beschrijvingstagewerkzaamheden</textarea><br>
-				 Bedrijfsnaam:<br>
-			    <input type='text'>
-			    <br>
-			    Adres:<br>
-			    <input type='text'>
-			    <br>
-			    Postcode:<br>
-			    <input type='text' pattern='[1-9][0-9]{3}\s?[a-zA-Z]{2}'>
-			    <br>
-			    Plaats:<br>
-			    <input type='text'>
-			    <br>
-			    Sector:<br>
-			    <input type='text'>
-			    <br>
-			    CoreBusiness:<br>
-			    <input type='text'>
-			    <br>
-			    Opmerking:
-			    <br><textarea></textarea>
+				<legend>Stage</legend>
+                <label>Tweedjaars studenten:<input type='checkbox' name='tweedejaars'></label>
+                <label>Afstudeer studenten:<input type='checkbox' name='afstudeer'></label>
+                <label>Onbekend:<input type='checkbox' name='onbekend'></label>
+                <p>Hoelang is de stage?</p>
+                <label>10 weken:<input type='radio' name='10 weken'></label>
+                <label>20 weken:<input type='radio' name='20 weken'></label>
+                <p>Beschrijvingwerkzaamheden</p>
+                <label>Beschrijving stagewerkzaamheden:<textarea name='beschrijving'></textarea></label>
+                <p>Beschrijving stagebedrijf</p>
+                <label>Bedrijfsnaam:<input type='text' name='bedrijfsnaam'></label></p>
+                <label>Adres:<input type='text' name='adres'></label></p>
+                <label>Postcode:<input type='text' name='postcode' pattern='[1-9][0-9]{3}\s?[a-zA-Z]{2}'></label>
+                <label>Plaats:<input type='text' name='plaats'></label>
+                <label>Sector:<input type='text' name='sector'></label>
+                <label>CoreBusiness:<input type='text' name='corebusiness'></label>
+                <label>Opmerking:<textarea name='opmerking'></textarea></label>
+                <input type='submit' name='verzenden'>
 			</fieldset>
-			<br><input type='submit'>
 		</form>
 </body>
 </html>
